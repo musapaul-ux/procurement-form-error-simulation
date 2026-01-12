@@ -1,38 +1,119 @@
-/* Concise stylesheet for procurement form */
-:root{
-	--bg:#f6f8fb;
-	--card:#ffffff;
-	--muted:#6b7280;
-	--accent:#0b5fff;
-	--danger:#b91c1c;
+
+:root {
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #0b5fff;
+  --danger: #b91c1c;
 }
 
-html,body{height:100%;margin:0;background:var(--bg);font-family:Segoe UI, Roboto, Arial, sans-serif;color:#0f172a}
-.main-content{max-width:900px;margin:36px auto;padding:24px;background:var(--card);border-radius:12px;box-shadow:0 8px 28px rgba(2,6,23,0.06)}
-h1{margin:0 0 6px;font-size:22px}
-p{color:var(--muted);margin-top:0}
-
-.form-card{background:var(--card);padding:16px;border-radius:10px;margin-top:16px;border:1px solid rgba(15,23,42,0.04)}
-.form-card h2{margin:0 0 12px;font-size:16px}
-
-label{display:block;margin:10px 0 6px;font-weight:600;font-size:14px}
-input[type="text"],input[type="number"],input[type="date"],input[type="time"],select{
-	width:100%;padding:10px 12px;border-radius:8px;border:1px solid #e6edf6;background:#fff;box-sizing:border-box;font-size:14px;color:#0f172a
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  font-family: Segoe UI, Roboto, Arial, sans-serif;
+  color: #0f172a;
+}
+.main-content {
+  max-width: 900px;
+  margin: 36px auto;
+  padding: 24px;
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(2, 6, 23, 0.06);
+}
+h1 {
+  margin: 0 0 6px;
+  font-size: 22px;
+}
+p {
+  color: var(--muted);
+  margin-top: 0;
 }
 
-input:focus,select:focus{outline:none;box-shadow:0 0 0 4px rgba(11,95,255,0.08);border-color:var(--accent)}
-
-.submit-btn{display:inline-block;margin-top:12px;padding:10px 16px;background:var(--accent);color:#fff;border:none;border-radius:10px;cursor:pointer;font-weight:700}
-.submit-btn:hover{filter:brightness(0.98)}
-
-.message{margin-top:14px;padding:10px 12px;border-radius:8px;background:rgba(14,165,233,0.08);color:#0369a1;display:none}
-.message.show{display:block}
-
-@media (min-width:720px){
-	.form-card{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-	.form-card h2{grid-column:1 / -1}
-	.form-card .submit-btn{grid-column:1 / -1}
+.form-card {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 10px;
+  margin-top: 16px;
+  border: 1px solid rgba(15, 23, 42, 0.04);
+}
+.form-card h2 {
+  margin: 0 0 12px;
+  font-size: 16px;
 }
 
-.error{color:var(--danger);font-weight:600}
+label {
+  display: block;
+  margin: 10px 0 6px;
+  font-weight: 600;
+  font-size: 14px;
+}
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e6edf6;
+  background: #fff;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #0f172a;
+}
 
+input:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(11, 95, 255, 0.08);
+  border-color: var(--accent);
+}
+
+.submit-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.submit-btn:hover {
+  filter: brightness(0.98);
+}
+
+.message {
+  margin-top: 14px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: rgba(14, 165, 233, 0.08);
+  color: #0369a1;
+  display: none;
+}
+.message.show {
+  display: block;
+}
+
+@media (min-width: 720px) {
+  .form-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  .form-card h2 {
+    grid-column: 1 / -1;
+  }
+  .form-card .submit-btn {
+    grid-column: 1 / -1;
+  }
+}
+
+.error {
+  color: var(--danger);
+  font-weight: 600;
+}
