@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-content">
+
+        <h1>Procurement Entry</h1>
+        <p>Record newly acquired produce stock for the branch</p>
+
+        <form id="procurementForm">
+
+            <!-- Produce Information Card -->
+            <div class="form-card">
+                <h2>Produce Information</h2>
+
+                <label>Produce Name</label>
+                <input type="text" id="produceName" required>
+
+                <label>Type</label>
+                <input type="text" id="produceType" required>
+
+                <label>Tonnage (KG)</label>
+                <input type="number" id="tonnage" required>
+
+                <label>Cost (UGX)</label>
+                <input type="number" id="cost" required>
+            </div>
+
+            <!-- Dealer Information Card -->
+            <div class="form-card">
+                <h2>Dealer Information</h2>
+
+                <label>Dealer Name</label>
+                <input type="text" id="dealerName" required>
+
+                <label>Contact</label>
+                <input type="text" id="dealerContact" required>
+
+                <label>Date</label>
+                <input type="date" id="date" required>
+
+                <label>Time</label>
+                <input type="time" id="time" required>
+
+            </div>
+
+            <!-- Branch & Pricing Card -->
+            <div class="form-card">
+                <h2>Branch & Pricing</h2>
+
+                <label>Branch</label>
+                <select id="branch">
+                    <option value="Maganjo">Maganjo</option>
+                    <option value="Matugga">Matugga</option>
+                </select>
+
+                <label>Selling Price (UGX)</label>
+                <input type="number" id="sellingPrice" required>
+
+                <button type="submit" class="submit-btn">Save Procurement</button>
+            </div>
+
+        </form>
+
+        <p id="procMessage" class="message"></p>
+
+    </div>
+
+</body>
+</html>
